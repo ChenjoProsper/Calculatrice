@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="calco">
+        <p>Ma Calco</p>
+        <div class="ecran">
+            <div class="operation" id="operation"></div>
+            <hr style="color: black;">
+            <div class="resultat" id="resultat"></div>
+        </div>
+        <div class="touche">
+            <button class="bouton" id="off" onclick="allumer(false)">off</button>
+            <button class="bouton" id="on" onclick="allumer(true)">on</button>
+            <button class="bouton" id="DEL" onclick="DEL()">DEL</button>
+            <button class="bouton" id="AC" onclick="AC()">AC</button>
+            <button class="bouton" id="(" onclick="ajout('(')">(</button>
+            <button class="bouton" id=")" onclick="ajout(')')">)</button>
+            <button class="bouton" id="%" onclick="ajout('%')">%</button>
+            <button class="bouton" onclick="alert('Ceci est une Calculatrice')"> </button>
+            <button class="bouton" id="8" onclick="ajout('8')">8</button>
+            <button class="bouton" id="9" onclick="ajout('9')">9</button>
+            <button class="bouton" id="*" onclick="ajout('*')">*</button>
+            <button class="bouton" id="/" onclick="ajout('/')">/</button>
+            <button class="bouton" id="6" onclick="ajout('6')">6</button>
+            <button class="bouton" id="7" onclick="ajout('7')">7</button>
+            <button class="bouton" id="+" onclick="ajout('+')">+</button>
+            <button class="bouton" id="-" onclick="ajout('-')">-</button>
+            <button class="bouton" id="4" onclick="ajout('4')">4</button>
+            <button class="bouton" id="5" onclick="ajout('5')">5</button>
+            <button class="bouton" id="." onclick="ajout('.')">.</button>
+            <button class="bouton" id="=" onclick="calcule()">=</button>
+            <button class="bouton" id="0" onclick="ajout('0')">0</button>
+            <button class="bouton" id="1" onclick="ajout('1')">1</button>
+            <button class="bouton" id="2" onclick="ajout('2')">2</button>
+            <button class="bouton" id="3" onclick="ajout('3')">3</button>
+        </div>
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>
